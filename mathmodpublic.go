@@ -25,3 +25,11 @@ func Divide(a float64, b float64) (float64, error) {
 	}
 	return a / b, nil
 }
+
+func Power(base float64, exponent float64) float64 {
+	result := 1.0
+	for i := 0; i < int(exponent); i++ {
+		result *= base
+	}
+	return result
+}
